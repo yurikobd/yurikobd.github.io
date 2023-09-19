@@ -1,9 +1,13 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "Home"
+    url:
   - title: "Publications"
     url: /papers/
+  - title: "Complete CV"
+    url: /CV_comp/
+  - title: "Music & Others"
+    url: /music/
     # - title: "Ayear-archivebout"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
 #   - title: "Publications"
