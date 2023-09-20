@@ -5,7 +5,7 @@ main:
   - title: "Publications"
     url: /_pages/papers/
   - title: "Complete CV"
-    url: /_pages/CV_comp/
+    url: /_pages/CV/
   - title: "Music & Others"
     url: /_pages/music/
     # - title: "Ayear-archivebout"
