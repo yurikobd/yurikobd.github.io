@@ -3,11 +3,11 @@ main:
   - title: "Home"
     url:
   - title: "Publications"
-    url: /papers/
+    url: /_pages/papers/
   - title: "Complete CV"
-    url: /CV_comp/
+    url: /_pages/CV_comp/
   - title: "Music & Others"
-    url: /music/
+    url: /_pages/music/
     # - title: "Ayear-archivebout"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
 #   - title: "Publications"
