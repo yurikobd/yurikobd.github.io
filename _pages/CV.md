@@ -1,14 +1,14 @@
 ---
 layout: single
-title:  "Complete CV"
+title:  "Yuriko Baba: complete CV"
 header:
   teaser: "unsplash-gallery-image-2-th.jpg"
-categories: 
-  - Jekyll
-tags:
-  - edge case
+#categories: 
+#  - Jekyll
+#tags:
+#  - edge case
 ---
-# Yuriko Baba
+
 
 
 ## Research interests
