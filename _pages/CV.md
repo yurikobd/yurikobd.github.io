@@ -50,3 +50,42 @@ The list is available [online here: https://yurikobd.github.io/_pages/papers/](h
 
 
 ## Contribution in conferences and workshops
+`7/2023` __QTYR23__, oral contribution. CSIC, Madrid, Spain.
+
+`5/2023` __Dynamical control of quantum materials 2023__, poster contribution. MPIPKS, Dresden,
+
+Germany.
+
+`3/2023` __DPG-skm Dresden 2023__, oral contribution. TU-Dresden, Dresden, Germany.
+
+`2/2023` __GEFES 2023 Salamanca__, poster contribution. Salamanca Univesrity, Salamanca, Spain.
+
+`9/2022` __DPG-skm Regensburg 2022__, poster contribution. Regensburg University, Regensburg,
+Germany.
+
+`8/2022` __CMD29 Manchester__, oral contribution. Manchester, United Kingdom.
+
+`6/2022` __Quantum 2022 Barcelona__, oral contribution. Barcelona, Spain.
+
+`6/2022` __XVIII GISC workshop__, oral contribution. Complutense Univesrity, Madrid, Spain.
+
+`6/2022` __Nano 2022 Sevilla__, oral contribution. Seville, Spain.
+
+`3/2022` __APS March Meeting 2022__, oral contribution. Online.
+
+`10/2021` __VI Congreso Internacional sobre Innovación, Aprendizaje y Cooperación CINAIC
+2021__, oral contribution. Universitad Politécnica de Madrid, Madrid, Spain.
+
+`06/2021` __7th International Conference on Higher Education Advances__, oral contribution.
+Online.
+
+`05/2021` __Quantum Information in Spain (ICE) 6__, poster contribution. Online.
+
+`03/2021` __APS March Meeting 2021__, oral contribution. Online.
+
+`09/2020` __CMD2020GEFES__, oral contribution. Online.
+
+`10/2019` __NanoGateway International Conference Mission 10000: Quantum Science & Technologies__, poster contribution. INL, Braga, Portugal.
+
+`07/2018` __International Conference on Superlattices, Nanostructures and Nanodevices__, poster
+contribution. CSIC, Madrid, Spain.
