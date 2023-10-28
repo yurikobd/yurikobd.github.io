@@ -17,4 +17,4 @@ I recorded a CD, available in Spotify, with a compilation of works for saxophone
 
 I also like to write about concerts. You can read my critics here: [https://sineris.es](https://sineris.es/author/yuriko-baba-dagostino).
 
-![titu.gif](..%2F_data%2Ftitu.gif)
+![titu.gif](https://github.com/yurikobd/yurikobd.github.io/blob/324a88abb1c150874802fa09754c74050ed85a2c/_data/titu.gif)
