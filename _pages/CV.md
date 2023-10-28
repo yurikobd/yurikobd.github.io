@@ -22,7 +22,7 @@ header:
 
 `2019-2022`
 __PhD in Physics__, *Universidad Complutense de Madrid*
-- Disertation title: “Quantum transport in Dirac materials under external fields and disorder”
+- Disertation title: “Quantum transport in Dirac materials under external fields and disorder” \[ [download here](https://drive.google.com/file/d/1u1AkxGeb66apXftNUJRyG3nNK3jXIAgE/view?usp=drivesdk) \]
 - Advisors: Francisco Domı́nguez-Adame Acosta and Rafael A. Molina Fernández
 FPU Fellow 2019 (Spanish Ministry of Universities)
 - Score: Excellent *cum laude*
@@ -46,10 +46,10 @@ Solid State Physics, Materials Physics, Bachelor’s Thesis
 
 ## Publications
 
-The list is available [online here: https://yurikobd.github.io/_pages/papers/](https://yurikobd.github.io/_pages/papers/)
+The list is available online at [https://yurikobd.github.io/_pages/papers/](https://yurikobd.github.io/_pages/papers/) .
 
 
-## Contribution in conferences and workshops
+## Contributions in conferences and workshops
 `7/2023` __QTYR23__, oral contribution. CSIC, Madrid, Spain.
 
 `5/2023` __Dynamical control of quantum materials 2023__, poster contribution. MPIPKS, Dresden,
