@@ -87,5 +87,49 @@ Online.
 
 `10/2019` __NanoGateway International Conference Mission 10000: Quantum Science & Technologies__, poster contribution. INL, Braga, Portugal.
 
-`07/2018` __International Conference on Superlattices, Nanostructures and Nanodevices__, poster
-contribution. CSIC, Madrid, Spain.
+`07/2018` __International Conference on Superlattices, Nanostructures and Nanodevices__, poster contribution. CSIC, Madrid, Spain.
+
+## Teaching experience
+`2019-2023` __Physics Laboratory II (Mechanics)__, Bachelor in Physics, Complutense University of Madrid. Total number of teaching hours: 96 h.
+
+`2022-2023` __Data Visualization in Blender__, organization of a course for PhD students. Project INNOVA number 158. Complutese University of Madrid.
+
+`09/2021` __Taller de transporte en la nanoescala__ (translation: “Workshop on nanoscale quantum trasport”), organization and tutorials for undergraduate students (20h). Project INNOVA number 140. Complutese University of Madrid.
+
+`2018-2020` __Últimos Avances en Fı́sica de la Materia Condensada__ (translation: “New trends in Condensed Matter Physics”), organization committee of the worshop for Bachelor and Master students (10h). Project INNOVA number 23 (2018) and 207 (2019). Complutese University of Madrid.
+
+## Competitive Fellows and Grants
+
+`11/2021-10/2023` __Fellow for university teachers training__ (Ayuda para Formación de Profesoraro Universitario), Spanish Ministry of Universities. Scholarship for financing the PhD undergraduated students.  
+
+`02-05/2019` __Jae Intro Scholarship__, introduction to research in the IEM, CSIC, Madrid, Spain.
+
+`2018-2019` __Excelence Master’s Scholarship UCM__, Complutense University of Madrid, Spain.
+
+`2017-2018` __Department collaboration scholarship__ (Beca de colaboración del MECD) in the Materials Department, Faculty of Physics, Complutense University of Madrid, Spain.
+
+`2014-2015` __Excelence Scholarship Comunidad de Madrid__, Community of Madrid, Spain.
+
+## Schools
+`08/2021` Topological Matter School 2021, DIPC, online.
+
+`09/2019` Course: Emergence of Quantum Phases in Novel Materials, ICMM - CSIC, Madrid,
+Spain.
+
+`06-07/2018` Cecam Summer School on Classical and Quantum Monte Carlo methods for
+Material Science, Nanotechnology and Biophysics, Sissa, Trieste, Italy.
+
+`07/2016` Carbon nanoforms and their scientific and social impact, Universidad Complutense
+de Madrid, Escorial, Spain. 
+
+## Skills
+`Programming` Python, Matlab, Fortran
+
+`Software` LaTeX, Mathematica, Maple
+
+`Edition` Blender, Adobe Photoshop, Adobe Flash, Sibelius
+
+`Languages` Italian and Spanish (native languages); English (fluent); Japanese (intermediate)
+
+
+
