@@ -73,7 +73,7 @@ google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification :
+google_site_verification : googlece2758ed6a15c8bc.html
 bing_site_verification   :
 naver_site_verification  :
 yandex_site_verification :
@@ -135,21 +135,21 @@ footer:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/YurikoBD"
-#    - label: "Facebook"
-#      icon: "fab fa-fw fa-facebook-square"
-#      # url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/yurikobd/"
-#    - label: "GitLab"
-#      icon: "fab fa-fw fa-gitlab"
-#      # url:
-#    - label: "Bitbucket"
-#      icon: "fab fa-fw fa-bitbucket"
-#      # url:
-#    - label: "Instagram"
-#      icon: "fab fa-fw fa-instagram"
-#      # url:
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url:
 
 
 # Reading Files
