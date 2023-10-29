@@ -129,7 +129,7 @@ de Madrid, Escorial, Spain.
 
 `Edition` Blender, Adobe Photoshop, Adobe Flash, Sibelius
 
-`Languages` Italian and Spanish (native languages); English (fluent); Japanese (intermediate)
+`Languages` Italian and Spanish (native languages); English (fluent); Japanese (basic)
 
 
 
