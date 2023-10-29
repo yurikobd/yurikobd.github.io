@@ -1,5 +1,6 @@
 ---
 layout: single
+author_profile: true
 title:  "Papers"
 header:
   teaser: "unsplash-gallery-image-2-th.jpg"
