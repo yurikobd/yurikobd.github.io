@@ -2,7 +2,7 @@
 layout: single
 author_profile: true
 
-title:  "Home"
+title:  ""
 header:
   teaser: "/assets/images/Fondo1.png"
 #categories: 
@@ -15,6 +15,6 @@ header:
 
 Here you can find some general info about me and my research. 
 
-
+![Fondo](/assets/images/Fondo1.png)
 ---
 
