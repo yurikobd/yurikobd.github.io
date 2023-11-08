@@ -1,10 +1,10 @@
 ---
-layout: layout
+layout: single
 author_profile: true
 
 title:  "Home"
 header:
-  teaser: "unsplash-gallery-image-2-th.jpg"
+  teaser: "/assets/images/Fondo1.png"
 #categories: 
 #  - Jekyll
 #tags:
