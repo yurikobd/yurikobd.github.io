@@ -15,11 +15,16 @@ header:
 ## Research interests
 
 - Electronic transport in nanostructures
+- Superconducting hybrid nanodevices
 - Topological materials and resilience to disorder and external perturbations
 - Quantum Hall effects
 - Light-matter interaction and Floquet engineering
 
 ## Education
+
+`2023-`
+__Postdoctoral research__, *Universidad Autónoma de Madrid, Ifimac*
+- Group: Alfredo Levy Yeyati, Rafael Sánchez, Pablo Burset Atienza
 
 `2019-2023`
 __PhD in Physics__, *Universidad Complutense de Madrid*
