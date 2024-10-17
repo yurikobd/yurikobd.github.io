@@ -69,9 +69,7 @@ The list is available online at [https://yurikobd.github.io/_pages/papers/](http
 
 `7/2023` __QTYR23__, oral contribution. CSIC, Madrid, Spain.
 
-`5/2023` __Dynamical control of quantum materials 2023__, poster contribution. MPIPKS, Dresden,
-
-Germany.
+`5/2023` __Dynamical control of quantum materials 2023__, poster contribution. MPIPKS, Dresden, Germany.
 
 `3/2023` __DPG-skm Dresden 2023__, oral contribution. TU-Dresden, Dresden, Germany.
 
