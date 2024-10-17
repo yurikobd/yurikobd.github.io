@@ -56,6 +56,17 @@ The list is available online at [https://yurikobd.github.io/_pages/papers/](http
 
 
 ## Contributions in conferences and workshops
+
+`9/2024` __CMD31 Braga__, oral contributions, Braga Forum, Braga, Portugal.
+
+`7/2024` __Non-equilibrium quantum many-body systems: From superconductors to quantum devices 2024__, oral contribution, Universitá di Genova, Genova, Italy.
+
+`6/2024` __International Workshop on Disordered Systems (IWDS) 2024__, invited oral contribution, Universidad de Salamanca, Salamanca, Spain. 
+
+`6/2024` __International Conference “Quantum sensing”__, poster contribution. Collège de France, Paris, France.
+
+`3/2024` __DPG-skm Berlin 2024__, oral contribution. TU-Berlin, Berlin, Germany. 
+
 `7/2023` __QTYR23__, oral contribution. CSIC, Madrid, Spain.
 
 `5/2023` __Dynamical control of quantum materials 2023__, poster contribution. MPIPKS, Dresden,
