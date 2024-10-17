@@ -27,3 +27,9 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/vcs.xml
+/.idea/yurikobd.github.io.iml
