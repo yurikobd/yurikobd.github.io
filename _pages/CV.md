@@ -20,11 +20,15 @@ header:
 - Quantum Hall effects
 - Light-matter interaction and Floquet engineering
 
-## Education
+## Education and Research Experience
 
-`2023-`
+`2025-`
+__Researcher__, *IEM (Instituto de Estructura de la Materia), CSIC, Madrid.*
+- Group: *Condensed Matter Theory*: Rafael A. Molina Fernández, José Gonzalez Carmona, Jorge Dukelsky Berkovich. 
+
+`2023-2025`
 __Postdoctoral research__, *Universidad Autónoma de Madrid, Ifimac*
-- Group: Alfredo Levy Yeyati, Rafael Sánchez, Pablo Burset Atienza
+- Group: *Madrid Quantum Transport*: Alfredo Levy Yeyati, Rafael Sánchez, Pablo Burset Atienza
 
 `2019-2023`
 __PhD in Physics__, *Universidad Complutense de Madrid*
@@ -56,6 +60,17 @@ The list is available online at [https://yurikobd.github.io/_pages/papers/](http
 
 
 ## Contributions in conferences and workshops
+`10/2025` __Escuela-Congreso 100 años de revolución cuántica__, invited oral contribution, Medellín, Colombia.
+
+`5/2025` __Mallorca Topological Quantum Matter__, oral contribution, Mallorca, Spain.
+
+`4/2025` __Capri Spring School__, oral contribution, Capri, Italy.  
+
+`3/2025` __DPG-SKM Regensburg 2025__, oral contribution, Regensburg, Germany.  
+
+`1/2025` __GEFES 2025__, oral contribution, Oviedo, Spain.  
+
+`9/2024` __CMD31 Braga__, oral contribution, Braga Forum, Braga, Portugal.
 
 `9/2024` __CMD31 Braga__, oral contributions, Braga Forum, Braga, Portugal.
 
