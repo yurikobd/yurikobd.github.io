@@ -9,7 +9,9 @@ categories:
 tags:
   - papers
 ---
-- <u>Y. Baba</u>, A. Levy Yeyati, P. Burset, "[Emergent topology by Landau level mixing in quantum Hall-superconductor nanostructures](https://doi.org/10.48550/arXiv.2507.14074)", arXiv:2507.14074.
+- <u>Y. Baba</u>, A. Levy Yeyati, P. Burset, "[Emergent topology by Landau level mixing in quantum Hall-superconductor nanostructures](https://doi.org/10.1103/v68s-tgxs)", Physical Review Letters **136**, 176601 (2026). [arXiv:2507.14074](https://doi.org/10.48550/arXiv.2507.14074).
+- M. G. Olmos, <u>Y. Baba</u>, R. A. Molina, and M. Amado, “[Corner majorana states in semi-Dirac materials](https://doi.org/10.48550/ARXIV.2604.22553)”, arXiv:2604.22553 (2026).
+- M. G. Olmos, D. M. Tejedor, M. Amado, <u>Y. Baba</u>, and R. A. Molina, “[Cubic edge dispersion in a semi-Dirac Chern insulator](https://doi.org/10.48550/ARXIV.2605.03459)”, arXiv.2605.03459 (2026).
 - M. García Olmos, <u>Y. Baba</u>, A. López, M. Amado, R. A. Molina, "[Spin-dependent transport through edge states in 2D semi-Dirac materials with Rashba spin-orbit coupling and band inversion](https://doi.org/10.1088/2053-1583/ae0f28)", 2D Materials **12**, 045019 (2025).
 - D. Martínez, P. L. Alcázar Ruano, <u>Y. Baba</u>, O. Arroyo-Gascón, F. Domínguez-Adame, "[Coherent potential approximation for disordered narrow-gap semiconductor superlattices](https://doi.org/10.3389/fphy.2025.1586773)", Frontiers in Physics **13**, 1586773 (2025).
 - P. Alcázar Ruano, D. Martínez, O. Arroyo-Gascón, <u>Y. Baba</u>, J. Quereda, F. Domínguez-Adame, "[Disordered transition metal dichalcogenides: A coherent potential approximation study](https://doi.org/10.1103/58pr-k9vt)", Phys. Rev. B **112**, 064204 (2025).

@@ -60,6 +60,13 @@ The list is available online at [https://yurikobd.github.io/_pages/papers/](http
 
 
 ## Contributions in conferences and workshops
+`04/2026` __22nd ETSF Young Researchers' Meeting__, invited talk, 
+*New Phases in Condensed Matter: Topological materials*, Zaragoza, Spain.
+
+`04/2026` __QuantuMatter 2026__, oral contribution, *Emergent topology by Landau level mixing in quantum Hall-superconductor nanostructures*, Barcelona, Spain.
+
+`03/2026` __DPG-skm Dresden 2026__, oral contribution, *Proximity-induced superconducting states in high Chern number quantum anomalous Hall heterostructures*, Dresden, Germany.
+
 `10/2025` __Escuela-Congreso 100 años de revolución cuántica__, invited oral contribution, Medellín, Colombia.
 
 `5/2025` __Mallorca Topological Quantum Matter__, oral contribution, Mallorca, Spain.
