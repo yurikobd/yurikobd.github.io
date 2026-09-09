@@ -60,7 +60,10 @@ The list is available online at [https://yurikobd.github.io/_pages/papers/](http
 
 
 ## Contributions in conferences and workshops
-`04/2026` __22nd ETSF Young Researchers' Meeting__, invited talk, 
+`07/2026` __XL RSEF Physics Biennial__ - Spanish Physical Society Meeting, 
+oral contribution, *Cubic edge dispersion in a semi-Dirac Chern insulator*, Seville, Spain.
+
+`05/2026` __22nd ETSF Young Researchers' Meeting__, invited talk, 
 *New Phases in Condensed Matter: Topological materials*, Zaragoza, Spain.
 
 `04/2026` __QuantuMatter 2026__, oral contribution, *Emergent topology by Landau level mixing in quantum Hall-superconductor nanostructures*, Barcelona, Spain.
