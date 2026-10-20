@@ -14,7 +14,8 @@
     {% include head/custom.html %}
   </head>
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+  {% assign bsky_pos = page.bluesky_position | default: site.bluesky.position | default: 'bottom' %}
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}{% if page.bluesky_sidebar and bsky_pos == 'bottom' %} wide{% endif %}">
     {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
 

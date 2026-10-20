@@ -1,0 +1,205 @@
+# Conferences and workshops, rendered on the CV page by _includes/conferences.html.
+# Add an entry anywhere in the file: the page sorts them by `date` (newest first).
+# Required: date (YYYY-MM), name, type.  Optional: title, venue.
+# Optional lat/lon (decimal degrees) place the entry on the map; entries without them stay list-only (e.g. online).
+- date: 2026-10
+  name: Majorana Workshop 2026
+  type: poster contribution
+  title: Emergent topology by Landau level mixing in quantum Hall-superconductor nanostructures
+  venue: RIKEN, Tokyo, Japan
+  lat:  35.7803
+  lon: 139.6125
+- date: 2026-09
+  name: Localisation 2026
+  type: poster contribution
+  title: Emergent topology by Landau level mixing in quantum Hall-superconductor nanostructures
+  venue: Yukawa Institute for Theoretical Physics(YITP), Kyoto University, Japan
+  lat:  35.0308
+  lon: 135.786
+- date: 2026-09
+  name: Seminar, Yukawa Institute for Theoretical Physics
+  type: seminar
+  title: Designing the character of topological boundary modes
+  venue: Conference Room K206, Main Building, Yukawa Institute, Kyoto U., Kyoto, Japan
+  lat: 35.0308
+  lon: 135.786
+- date: 2026-07
+  name: XL RSEF Physics Biennial - Spanish Physical Society Meeting
+  type: oral contribution
+  title: Cubic edge dispersion in a semi-Dirac Chern insulator
+  venue: Seville, Spain
+  lat: 37.389
+  lon: -5.984
+- date: 2026-05
+  name: 22nd ETSF Young Researchers' Meeting
+  type: invited talk
+  title: "New Phases in Condensed Matter: Topological materials"
+  venue: Zaragoza, Spain
+  lat: 41.649
+  lon: -0.889
+- date: 2026-04
+  name: QuantuMatter 2026
+  type: oral contribution
+  title: Emergent topology by Landau level mixing in quantum Hall-superconductor nanostructures
+  venue: Barcelona, Spain
+  lat: 41.385
+  lon: 2.173
+- date: 2026-03
+  name: DPG-SKM Dresden 2026
+  type: oral contribution
+  title: Proximity-induced superconducting states in high Chern number quantum anomalous Hall heterostructures
+  venue: Dresden, Germany
+  lat: 51.05
+  lon: 13.738
+- date: 2025-10
+  name: Escuela-Congreso 100 años de revolución cuántica
+  type: invited oral contribution
+  venue: Medellín, Colombia
+  lat: 6.244
+  lon: -75.581
+- date: 2025-05
+  name: Mallorca Topological Quantum Matter
+  type: oral contribution
+  venue: Mallorca, Spain
+  lat: 39.570
+  lon: 2.651
+- date: 2025-04
+  name: Capri Spring School
+  type: oral contribution
+  venue: Capri, Italy
+  lat: 40.551
+  lon: 14.242
+- date: 2025-03
+  name: DPG-SKM Regensburg 2025
+  type: oral contribution
+  venue: Regensburg, Germany
+  lat: 49.013
+  lon: 12.102
+- date: 2025-01
+  name: GEFES 2025
+  type: oral contribution
+  venue: Oviedo, Spain
+  lat: 43.362
+  lon: -5.849
+- date: 2024-09
+  name: CMD31 Braga
+  type: oral contributions
+  venue: Braga Forum, Braga, Portugal
+  lat: 41.546
+  lon: -8.421
+- date: 2024-07
+  name: "Non-equilibrium quantum many-body systems: From superconductors to quantum devices 2024"
+  type: oral contribution
+  venue: Università di Genova, Genova, Italy
+  lat: 44.407
+  lon: 8.934
+- date: 2024-06
+  name: International Workshop on Disordered Systems (IWDS) 2024
+  type: invited oral contribution
+  venue: Universidad de Salamanca, Salamanca, Spain
+  lat: 40.965
+  lon: -5.664
+- date: 2024-06
+  name: International Conference “Quantum sensing”
+  type: poster contribution
+  venue: Collège de France, Paris, France
+  lat: 48.848
+  lon: 2.345
+- date: 2024-03
+  name: DPG-SKM Berlin 2024
+  type: oral contribution
+  venue: TU-Berlin, Berlin, Germany
+  lat: 52.512
+  lon: 13.326
+- date: 2023-07
+  name: QTYR23
+  type: oral contribution
+  venue: CSIC, Madrid, Spain
+  lat: 40.416
+  lon: -3.703
+- date: 2023-05
+  name: Dynamical control of quantum materials 2023
+  type: poster contribution
+  venue: MPIPKS, Dresden, Germany
+  lat: 51.05
+  lon: 13.738
+- date: 2023-03
+  name: DPG-SKM Dresden 2023
+  type: oral contribution
+  venue: TU-Dresden, Dresden, Germany
+  lat: 51.05
+  lon: 13.738
+- date: 2023-02
+  name: GEFES 2023 Salamanca
+  type: poster contribution
+  venue: Salamanca University, Salamanca, Spain
+  lat: 40.965
+  lon: -5.664
+- date: 2022-09
+  name: DPG-SKM Regensburg 2022
+  type: poster contribution
+  venue: Regensburg University, Regensburg, Germany
+  lat: 49.013
+  lon: 12.102
+- date: 2022-08
+  name: CMD29 Manchester
+  type: oral contribution
+  venue: Manchester, United Kingdom
+  lat: 53.481
+  lon: -2.237
+- date: 2022-06
+  name: Quantum 2022 Barcelona
+  type: oral contribution
+  venue: Barcelona, Spain
+  lat: 41.385
+  lon: 2.173
+- date: 2022-06
+  name: XVIII GISC workshop
+  type: oral contribution
+  venue: Complutense University, Madrid, Spain
+  lat: 40.416
+  lon: -3.703
+- date: 2022-06
+  name: Nano 2022 Sevilla
+  type: oral contribution
+  venue: Seville, Spain
+  lat: 37.389
+  lon: -5.984
+- date: 2022-03
+  name: APS March Meeting 2022
+  type: oral contribution
+  venue: Online
+- date: 2021-10
+  name: VI Congreso Internacional sobre Innovación, Aprendizaje y Cooperación CINAIC 2021
+  type: oral contribution
+  venue: Universidad Politécnica de Madrid, Madrid, Spain
+  lat: 40.416
+  lon: -3.703
+- date: 2021-06
+  name: 7th International Conference on Higher Education Advances
+  type: oral contribution
+  venue: Online
+- date: 2021-05
+  name: Quantum Information in Spain (ICE) 6
+  type: poster contribution
+  venue: Online
+- date: 2021-03
+  name: APS March Meeting 2021
+  type: oral contribution
+  venue: Online
+- date: 2020-09
+  name: CMD2020GEFES
+  type: oral contribution
+  venue: Online
+- date: 2019-10
+  name: "NanoGateway International Conference Mission 10000: Quantum Science & Technologies"
+  type: poster contribution
+  venue: INL, Braga, Portugal
+  lat: 41.546
+  lon: -8.421
+- date: 2018-07
+  name: International Conference on Superlattices, Nanostructures and Nanodevices
+  type: poster contribution
+  venue: CSIC, Madrid, Spain
+  lat: 40.416
+  lon: -3.703

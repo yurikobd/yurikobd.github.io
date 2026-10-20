@@ -1,0 +1,25 @@
+# Research stays, shown on the congress map in red (_includes/conferences.html).
+# Required: name, venue, lat, lon.  Optional: date and end (YYYY-MM), groups (list of host groups).
+- name: University of Regensburg
+  date: 2022-09
+  end: 2022-12
+  venue: Regensburg, Germany
+  groups:
+    - Klaus Richter Group
+  lat: 49.013
+  lon: 12.102
+- name: ISSP, University of Tokyo
+  date: 2023-10
+  venue: Kashiwa, Chiba, Japan
+  groups:
+    - Takashi Oka Group, ISSP
+  lat: 35.900
+  lon: 139.944
+- name: YITP, Kyoto University
+  date: 2026-08
+  end: 2026-11
+  venue: Kyoto, Japan
+  groups:
+    - Masatoshi Sato Group
+  lat: 35.0308
+  lon: 135.786

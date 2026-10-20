@@ -1,0 +1,18 @@
+{%- comment -%} Renders _data/conferences.yml, newest first, with a map of the entries that have lat/lon. {%- endcomment -%}
+{%- assign confs = site.data.conferences | sort: "date" | reverse -%}
+{%- assign mapped = confs | where_exp: "c", "c.lat" -%}
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+<div id="congress-map" class="congress-map" role="img" aria-label="Map of the conferences and workshops where I have presented. The same information is listed below."></div>
+<script id="congress-data" type="application/json">{{ mapped | jsonify }}</script>
+<script id="stays-data" type="application/json">{{ site.data.stays | jsonify }}</script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="{{ '/assets/js/congress-map.js' | relative_url }}"></script>
+
+{%- for c in confs -%}
+{%- assign ym = c.date | split: "-" -%}
+<p><code>{{ ym[1] }}/{{ ym[0] }}</code> <strong>{{ c.name }}</strong>, {{ c.type }}{% if c.title %}, <em>{{ c.title }}</em>{% endif %}{% if c.venue %}, {{ c.venue }}{% endif %}.</p>
+{%- endfor -%}

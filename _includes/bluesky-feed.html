@@ -1,0 +1,74 @@
+{%- comment -%}
+  Latest Bluesky posts, fetched in the browser from the public API.
+  Usage: {% include bluesky-feed.html handle="name.bsky.social" limit=5 compact=true %}
+  compact=true: short text, no images (for the sidebar).
+{%- endcomment -%}
+{%- assign bsky_handle = include.handle | default: "yurikobd.bsky.social" -%}
+{%- assign bsky_limit = include.limit | default: 5 -%}
+<div class="bsky-feed{% if include.compact %} bsky-feed--compact{% endif %}" data-handle="{{ bsky_handle }}" data-limit="{{ bsky_limit }}"{% if include.compact %} data-compact="1"{% endif %}>
+  <p class="bsky-feed__status">Loading posts…</p>
+  <noscript><p><a href="https://bsky.app/profile/{{ bsky_handle }}">View my posts on Bluesky</a></p></noscript>
+</div>
+<script>
+(function () {
+  var root = document.currentScript.previousElementSibling;
+  var handle = root.dataset.handle;
+  var compact = !!root.dataset.compact;
+  var profile = "https://bsky.app/profile/" + handle;
+  var url = "https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=" +
+    encodeURIComponent(handle) + "&filter=posts_no_replies&limit=" + (+root.dataset.limit + 5);
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text) e.textContent = text;
+    return e;
+  }
+
+  fetch(url)
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (data) {
+      root.textContent = "";
+      var shown = 0;
+      data.feed.forEach(function (item) {
+        if (item.reason || shown >= +root.dataset.limit) return; // skip reposts
+        var post = item.post, rec = post.record;
+        var link = profile + "/post/" + post.uri.split("/").pop();
+        var card = el("article", "bsky-post");
+        var date = new Date(rec.createdAt).toLocaleDateString("en-GB",
+          { day: "numeric", month: "short", year: "numeric" });
+        var meta = el("a", "bsky-post__date", date);
+        meta.href = link;
+        meta.rel = "noopener";
+        card.appendChild(meta);
+        var text = rec.text;
+        if (compact && text.length > 110) text = text.slice(0, 110).trim() + "…";
+        card.appendChild(el("p", "bsky-post__text", text));
+        var imgs = post.embed && post.embed.images;
+        if (!compact && imgs && imgs.length) {
+          var img = el("img", "bsky-post__img");
+          img.src = imgs[0].thumb;
+          img.alt = imgs[0].alt || "";
+          img.loading = "lazy";
+          card.appendChild(img);
+        }
+        root.appendChild(card);
+        shown++;
+      });
+      var more = el("p", "bsky-feed__more");
+      var a = el("a", "", compact ? "More on Bluesky →" : "Follow @" + handle + " on Bluesky →");
+      a.href = profile;
+      a.rel = "noopener";
+      more.appendChild(a);
+      root.appendChild(more);
+    })
+    .catch(function () {
+      root.textContent = "";
+      var p = el("p");
+      var a = el("a", "", "View my posts on Bluesky");
+      a.href = profile;
+      p.appendChild(a);
+      root.appendChild(p);
+    });
+})();
+</script>
