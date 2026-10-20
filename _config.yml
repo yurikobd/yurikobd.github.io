@@ -132,12 +132,16 @@ author:
 #      icon: "fab fa-fw fa-instagram"
 #      # url: "https://instagram.com/"
 
+# Bluesky feed on pages with `bluesky_sidebar: true` in their front matter
+bluesky:
+  position: bottom   # right (side column on desktop) | bottom (full width under the content)
+
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/YurikoBD"
+    - label: "Bluesky"
+      icon: "fab fa-fw fa-bluesky"
+      url: "https://bsky.app/profile/yurikobd.bsky.social"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
@@ -233,6 +237,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-scholar
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -241,6 +246,23 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+
+
+# Publications (jekyll-scholar)
+scholar:
+  style: _csl/aps-all-authors.csl
+  source: ./_bibliography
+  bibliography: papers.bib
+  sort_by: sortdate
+  order: descending
+  bibliography_list_attributes:
+    reversed: reversed
+  bibtex_skip_fields: [abstract, keywords]
+  bibliography_template: |
+    {{ reference | replace: "Y. Baba", "<u>Y. Baba</u>" }}
+    {% if entry.doi %}{% unless entry.doi contains '10.48550' %}<a href="https://doi.org/{{ entry.doi }}">[DOI]</a>{% endunless %}{% endif %}
+    {% if entry.eprint %}<a href="https://arxiv.org/abs/{{ entry.eprint }}">[arXiv]</a>{% endif %}
+    {% if entry.keywords %}<span class="kw-chips">{% assign kws = entry.keywords | split: ';' %}{% for k in kws %}<button type="button" class="kw-chip" data-kw="{{ k | strip }}">{{ k | strip }}</button>{% endfor %}</span>{% endif %}
 
 
 # Archives

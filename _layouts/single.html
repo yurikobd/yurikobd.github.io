@@ -37,7 +37,8 @@ layout: default
         </header>
       {% endunless %}
 
-      <section class="page__content e-content" itemprop="text">
+      {% assign bsky_pos = page.bluesky_position | default: site.bluesky.position | default: "bottom" %}
+      <section class="page__content e-content{% if page.bluesky_sidebar and bsky_pos != "bottom" %} has-bsky{% endif %}" itemprop="text">
         {% if page.toc %}
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
             <nav class="toc">
@@ -46,7 +47,19 @@ layout: default
             </nav>
           </aside>
         {% endif %}
+        {% if page.bluesky_sidebar and bsky_pos != "bottom" %}
+          <aside class="sidebar__right sticky bsky-aside">
+            <h4 class="bsky-aside__title"><i class="fab fa-bluesky" aria-hidden="true"></i> Latest on Bluesky</h4>
+            {% include bluesky-feed.html handle="yurikobd.bsky.social" limit=3 compact=true %}
+          </aside>
+        {% endif %}
         {{ content }}
+        {% if page.bluesky_sidebar and bsky_pos == "bottom" %}
+          <section class="bsky-bottom">
+            <h4 class="bsky-aside__title"><i class="fab fa-bluesky" aria-hidden="true"></i> Latest on Bluesky</h4>
+            {% include bluesky-feed.html handle="yurikobd.bsky.social" limit=4 %}
+          </section>
+        {% endif %}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 

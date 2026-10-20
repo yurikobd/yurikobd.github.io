@@ -1,0 +1,74 @@
+{%- comment -%}
+  Keyword filter for the jekyll-scholar list on the same page.
+  Reads the .kw-chip buttons rendered by bibliography_template (the `keywords` field in papers.bib).
+  Filters combine with AND; the selection is kept in the URL hash, e.g. #kw=graphene,TMDs
+{%- endcomment -%}
+<div class="kw-filter" id="kw-filter" aria-label="Filter papers by keyword">
+  <div class="kw-filter__bar"></div>
+  <p class="kw-filter__status" aria-live="polite"></p>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var list = document.querySelector("ol.bibliography");
+  var bar = document.querySelector("#kw-filter .kw-filter__bar");
+  var status = document.querySelector("#kw-filter .kw-filter__status");
+  if (!list || !bar) return;
+
+  var items = Array.prototype.map.call(list.querySelectorAll(":scope > li"), function (li) {
+    var kws = Array.prototype.map.call(li.querySelectorAll(".kw-chip"), function (b) { return b.dataset.kw; });
+    return { li: li, kws: kws };
+  });
+  var counts = {};
+  items.forEach(function (it) { it.kws.forEach(function (k) { counts[k] = (counts[k] || 0) + 1; }); });
+  var all = Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a] || a.localeCompare(b); });
+
+  var active = [];
+  function fromHash() {
+    var m = location.hash.match(/kw=([^&]*)/);
+    active = m ? decodeURIComponent(m[1]).split(",").filter(function (k) { return counts[k]; }) : [];
+  }
+  function toHash() {
+    history.replaceState(null, "", active.length ? "#kw=" + encodeURIComponent(active.join(",")) : location.pathname + location.search);
+  }
+  function toggle(k) {
+    var i = active.indexOf(k);
+    if (i < 0) active.push(k); else active.splice(i, 1);
+    toHash();
+    render();
+  }
+
+  function mkButton(label, cls, onclick) {
+    var b = document.createElement("button");
+    b.type = "button"; b.className = cls; b.textContent = label; b.onclick = onclick;
+    return b;
+  }
+
+  function render() {
+    bar.textContent = "";
+    var reset = mkButton("All papers", "kw-chip kw-chip--reset" + (active.length ? "" : " is-active"), function () { active = []; toHash(); render(); });
+    reset.setAttribute("aria-pressed", String(!active.length));
+    bar.appendChild(reset);
+    all.forEach(function (k) {
+      var on = active.indexOf(k) >= 0;
+      var b = mkButton(k + " (" + counts[k] + ")", "kw-chip" + (on ? " is-active" : ""), function () { toggle(k); });
+      b.setAttribute("aria-pressed", String(on));
+      bar.appendChild(b);
+    });
+    var shown = 0;
+    items.forEach(function (it) {
+      var ok = active.every(function (k) { return it.kws.indexOf(k) >= 0; });
+      it.li.style.display = ok ? "" : "none";
+      if (ok) shown++;
+      Array.prototype.forEach.call(it.li.querySelectorAll(".kw-chip"), function (c) {
+        c.classList.toggle("is-active", active.indexOf(c.dataset.kw) >= 0);
+        c.onclick = function () { toggle(c.dataset.kw); };
+      });
+    });
+    status.textContent = active.length ? "Showing " + shown + " of " + items.length + " papers" : "";
+  }
+
+  fromHash();
+  render();
+  window.addEventListener("hashchange", function () { fromHash(); render(); });
+});
+</script>

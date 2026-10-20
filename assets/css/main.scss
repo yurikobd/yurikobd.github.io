@@ -7,3 +7,236 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+// jekyll-scholar bibliography: native <ol reversed> numbering (newest = highest number),
+// the style's own [n] labels are hidden
+ol.bibliography {
+  list-style: decimal;
+  margin-left: 0;
+  padding-left: 2.2em;
+  li { margin-bottom: 0.8em; }
+  .csl-left-margin { display: none; }
+  .csl-right-inline { display: inline; margin: 0; }
+}
+
+// Bluesky feed (_includes/bluesky-feed.html)
+.bsky-feed {
+  max-width: 36em;
+  margin-bottom: 1.5em;
+
+  .bsky-post {
+    margin-bottom: 0.9em;
+    padding: 0.7em 1em;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+  }
+  .bsky-post__date { font-size: 0.8em; opacity: 0.75; }
+  .bsky-post__text { margin: 0.3em 0 0; white-space: pre-line; overflow-wrap: anywhere; }
+  .bsky-post__img { display: block; max-width: 100%; max-height: 16em; margin-top: 0.6em; border-radius: $border-radius; }
+}
+
+// Bluesky feed in the right-hand column (single layout, bluesky_sidebar: true)
+$bsky-blue: #0085ff;
+
+.bsky-aside,
+.bsky-bottom {
+  box-sizing: border-box;
+  padding: 0.9em 1em 0.4em;
+  background: rgba($bsky-blue, 0.12);
+  border: 1px solid rgba($bsky-blue, 0.45);
+  border-top: 4px solid $bsky-blue;
+  border-radius: $border-radius;
+  scrollbar-width: thin;
+  scrollbar-color: rgba($bsky-blue, 0.6) transparent;
+
+  script { display: none; }
+}
+// Alternative placement: full-width panel under the page content (bluesky_position: bottom)
+.bsky-bottom {
+  clear: both;
+  margin-top: 2em;
+
+  .bsky-feed { max-width: none; }
+  .bsky-feed:not(.bsky-feed--compact) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17em, 1fr));
+    gap: 0.9em;
+    align-items: start;
+
+    .bsky-post { margin-bottom: 0; background: rgba(#000, 0.18); border-color: rgba($bsky-blue, 0.3); }
+    .bsky-feed__status,
+    .bsky-feed__more { grid-column: 1 / -1; margin: 0; }
+  }
+}
+
+.bsky-aside {
+  max-height: calc(100vh - 4em);
+  overflow-y: auto;
+
+  @include breakpoint($large) {
+    width: calc(#{$right-sidebar-width-narrow} - 1em);
+    margin-left: 1em;
+  }
+  @include breakpoint($x-large) {
+    width: calc(#{$right-sidebar-width} - 1em);
+  }
+}
+
+// Below the desktop breakpoint the panel goes after the page content
+@media (max-width: #{$large - 1px}) {
+  .has-bsky {
+    display: flex;
+    flex-direction: column;
+    .bsky-aside { order: 2; margin-top: 1.5em; }
+  }
+}
+.bsky-aside__title {
+  margin: 0 0 0.7em;
+  font-size: 0.95em;
+  color: lighten($bsky-blue, 18%);
+  i { margin-right: 0.3em; }
+}
+.bsky-feed--compact {
+  font-size: 0.8em;
+  margin-bottom: 0.4em;
+  .bsky-post {
+    padding: 0.5em 0.7em;
+    margin-bottom: 0.6em;
+    background: rgba(#000, 0.18);
+    border-color: rgba($bsky-blue, 0.3);
+  }
+  .bsky-post__text { line-height: 1.35; }
+}
+
+// Home page boxes (index.md)
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
+  gap: 1em;
+  margin: 0.8em 0 1.4em;
+
+  .home-card {
+    box-sizing: border-box;
+    padding: 0.8em 1em;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    background: rgba(#fff, 0.03);
+  }
+
+  // single formatted reference inside a box
+  ol.bibliography {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li { margin: 0; }
+  }
+}
+
+.home-links {
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+
+  a.home-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s, background 0.15s;
+
+    strong { display: block; font-size: 1.05em; }
+    span { display: block; margin-top: 0.2em; font-size: 0.85em; opacity: 0.75; }
+
+    &:hover {
+      border-color: $primary-color;
+      background: rgba(#fff, 0.07);
+    }
+  }
+}
+
+// Keyword chips and filter (Papers page)
+$kw-blue: #3987e5;
+
+.kw-chips { display: block; margin-top: 0.3em; }
+.kw-chip {
+  display: inline-block;
+  margin: 0 0.35em 0.35em 0;
+  padding: 0.1em 0.65em;
+  font: inherit;
+  font-size: 0.7em;
+  line-height: 1.6;
+  color: inherit;
+  background: transparent;
+  border: 1px solid rgba($kw-blue, 0.6);
+  border-radius: 999px;
+  cursor: pointer;
+
+  &:hover { background: rgba($kw-blue, 0.18); }
+  &.is-active { background: $kw-blue; border-color: $kw-blue; color: #fff; }
+  &--reset { border-style: dashed; }
+}
+.kw-filter { margin: 0.5em 0 1.2em; }
+.kw-filter__bar .kw-chip { font-size: 0.78em; }
+.kw-filter__status { margin: 0.2em 0 0; font-size: 0.85em; opacity: 0.8; }
+.home-card .kw-chips { display: none; }
+
+// Research map (_pages/map.md, assets/js/research-map.js)
+.research-map {
+  margin: 1em 0 2em;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background: rgba(#000, 0.12);
+
+  svg text { font-family: inherit; }
+  svg g:focus { outline: none; }
+  svg g:focus-visible circle { stroke: #fff; }
+}
+.research-map__tip {
+  position: absolute;
+  z-index: 5;
+  max-width: 17em;
+  padding: 0.5em 0.7em;
+  font-size: 0.8em;
+  line-height: 1.35;
+  background: #1a1a19;
+  border: 1px solid rgba(#fff, 0.25);
+  border-radius: $border-radius;
+  pointer-events: none;
+}
+.research-map__tip-meta { opacity: 0.75; }
+.research-map__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em 1.4em;
+  padding: 0.5em 0.9em;
+  font-size: 0.8em;
+  border-top: 1px solid $border-color;
+
+  i {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 0.35em;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+  a { margin-left: auto; }
+}
+
+// Conference map (_includes/conferences.html, assets/js/congress-map.js)
+.congress-map {
+  height: 340px;
+  margin: 1em 0 1.5em;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background: #1a1a19;
+
+  .congress-map__list { margin: 0.3em 0 0; padding-left: 1.1em; font-size: 0.85em; }
+  // theme's code style (dark background, light text) is unreadable on the white popup
+  // cluster bubbles in the conference orange, instead of the plugin's default green/yellow
+  .marker-cluster-small, .marker-cluster-medium, .marker-cluster-large { background-color: rgba(232, 163, 61, 0.35); }
+  .marker-cluster-small div, .marker-cluster-medium div, .marker-cluster-large div { background-color: rgba(232, 163, 61, 0.9); color: #1a1a19; font-weight: bold; }
+  .leaflet-popup-content code { color: #1a1a19; background: #eef0f3; border: 1px solid #c3c2b7; font-size: 0.95em; }
+  .leaflet-popup-content { margin: 0.7em 0.9em; }
+}
+
+// Author name in the left sidebar (slightly larger than the theme's default 1em)
+.sidebar .author__name {
+  font-size: 1.2em;
+}

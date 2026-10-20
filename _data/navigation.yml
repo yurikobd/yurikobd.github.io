@@ -4,6 +4,8 @@ main:
     # url:
   - title: "Publications"
     url: /_pages/papers/
+  - title: "Research map"
+    url: /_pages/map/
   - title: "Complete CV"
     url: /_pages/CV/
   - title: "Music & Others"
